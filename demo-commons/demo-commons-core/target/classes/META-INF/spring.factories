@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.hujtb.commons.core.config.BaseConfiguration
+
+org.springframework.context.ApplicationListener=\
+com.hujtb.commons.core.listener.LogMDCListener

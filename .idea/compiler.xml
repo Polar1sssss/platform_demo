@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo-config" />
+        <module name="demo-commons-web" />
+        <module name="demo-data-entity" />
+        <module name="demo-business-student-core" />
+        <module name="demo-ability" />
+        <module name="demo-business-student-feign" />
+        <module name="demo-data-mapper" />
+        <module name="demo-commons-core" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
