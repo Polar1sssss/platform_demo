@@ -2,24 +2,26 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>platform_demo</artifactId>
         <groupId>com.hujtb</groupId>
+        <artifactId>demo-data</artifactId>
         <version>1.0</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>demo-commons</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>demo-commons-core</module>
-        <module>demo-commons-web</module>
-        <module>demo-commons-mysql</module>
-    </modules>
+    <artifactId>demo-data-base</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

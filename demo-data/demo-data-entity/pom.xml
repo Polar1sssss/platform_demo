@@ -7,6 +7,10 @@
         <groupId>com.hujtb</groupId>
         <version>1.0</version>
     </parent>
+    <packaging>pom</packaging>
+    <modules>
+        <module>demo-data-entity-student</module>
+    </modules>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>demo-data-entity</artifactId>
@@ -15,5 +19,12 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-annotation</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
