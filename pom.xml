@@ -68,6 +68,12 @@
                 <artifactId>demo-config</artifactId>
                 <version>${basic.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.hujtb</groupId>
+                <artifactId>demo-business-student-protocol</artifactId>
+                <version>${basic.version}</version>
+            </dependency>
+
             <!-- 引入log4j2高版本依赖 -->
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>

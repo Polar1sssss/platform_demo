@@ -11,6 +11,7 @@
         <module name="demo-commons-web" />
         <module name="demo-data-entity" />
         <module name="demo-business-student-core" />
+        <module name="demo-business-student-protocol" />
         <module name="demo-ability" />
         <module name="demo-business-student-feign" />
         <module name="demo-data-mapper" />
