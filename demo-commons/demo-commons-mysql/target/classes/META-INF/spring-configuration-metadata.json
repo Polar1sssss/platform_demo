@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "name": "hujtb.plugin.sql",
+      "type": "com.hujtb.commons.mysql.property.SQLPluginConfigInfo",
+      "sourceType": "com.hujtb.commons.mysql.property.SQLPluginConfigInfo"
+    }
+  ],
+  "properties": [
+    {
+      "name": "hujtb.plugin.sql.enable",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.hujtb.commons.mysql.property.SQLPluginConfigInfo",
+      "defaultValue": false
+    }
+  ],
+  "hints": []
+}

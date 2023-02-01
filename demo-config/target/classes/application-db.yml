@@ -1,3 +1,6 @@
 spring:
   datasource:
-    url: 统一的数据库地址
+    url: jdbc:mysql:///testdb?serverTimezone=GMT%2B8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
