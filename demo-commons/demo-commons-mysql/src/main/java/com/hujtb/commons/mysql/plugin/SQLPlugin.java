@@ -1,5 +1,6 @@
 package com.hujtb.commons.mysql.plugin;
 
+import com.hujtb.commons.mysql.utils.MyBatisPluginUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.executor.statement.StatementHandler;
 import org.apache.ibatis.plugin.Interceptor;
@@ -29,7 +30,7 @@ public class SQLPlugin implements Interceptor {
     @Override
     public Object intercept(Invocation invocation) throws Throwable {
 
-        StatementHandler statementHandler = (StatementHandler) invocation.getTarget();
+        StatementHandler statementHandler = (StatementHandler) MyBatisPluginUtils.getNoProxyObject(invocation.getTarget());
         // 记录执行的SQL
         String sql = statementHandler.getBoundSql().getSql().toLowerCase().replaceAll("\n", "").replaceAll(" ", "");
         log.info("[SQL - EXEC] 执行的SQL语句：{}", sql);

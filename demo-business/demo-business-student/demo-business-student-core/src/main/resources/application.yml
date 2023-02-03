@@ -7,5 +7,5 @@ spring:
     active: '@runtime-profile@'
 hujtb:
   plugin:
-    sql:
+    page:
       enable: true

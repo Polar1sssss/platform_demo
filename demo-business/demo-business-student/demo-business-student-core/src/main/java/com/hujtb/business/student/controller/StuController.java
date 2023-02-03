@@ -2,16 +2,13 @@ package com.hujtb.business.student.controller;
 
 import com.hujtb.business.student.input.StudentInput;
 import com.hujtb.business.student.service.StudentService;
-import com.hujtb.commons.web.enums.Codes;
-import com.hujtb.commons.web.r.R;
-import com.hujtb.commons.web.r.RUtils;
+import com.hujtb.data.r.R;
+import com.hujtb.data.r.RUtils;
 import com.hujtb.data.entity.Student;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

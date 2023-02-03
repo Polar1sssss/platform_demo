@@ -1,9 +1,9 @@
 package com.hujtb.commons.mysql.plugin;
 
-import com.hujtb.commons.mysql.page.MyPage;
-import com.hujtb.commons.mysql.page.Page;
+import com.hujtb.commons.mysql.utils.MyBatisPluginUtils;
+import com.hujtb.data.page.MyPage;
+import com.hujtb.data.page.Page;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.ibatis.executor.parameter.ParameterHandler;
 import org.apache.ibatis.executor.statement.StatementHandler;
 import org.apache.ibatis.mapping.BoundSql;
 import org.apache.ibatis.plugin.Interceptor;
@@ -32,7 +32,7 @@ public class PagePlugin implements Interceptor {
     @Override
     public Object intercept(Invocation invocation) throws Throwable {
 
-        StatementHandler statementHandler = (StatementHandler) invocation.getTarget();
+        StatementHandler statementHandler = (StatementHandler) MyBatisPluginUtils.getNoProxyObject(invocation.getTarget());
         String sql = statementHandler.getBoundSql().getSql().toLowerCase().replaceAll("\n", "").replaceAll(" ", "");
         // 判断当前是否是查询sql
         if (!sql.startsWith("select")) {
@@ -55,7 +55,7 @@ public class PagePlugin implements Interceptor {
         page.setPageTotal(page.getPageCount() % page.getPageSize() == 0 ? page.getPageCount() / page.getPageSize() : page.getPageCount() / page.getPageSize() + 1);
         // 临界值设置
         if (page.getPageNum() < 1) page.setPageNum(1);
-        if (page.getPageNum() > page.getPageTotal()) page.setPageNum(page.getPageTotal());
+        if (page.getPageNum() > page.getPageTotal() && page.getPageTotal() > 0) page.setPageNum(page.getPageTotal());
 
         sql += " limit " + (page.getPageNum() - 1) * page.getPageSize() + ", " + page.getPageSize();
         log.info("[page - info] 分页SQL：{}", sql);
@@ -74,7 +74,7 @@ public class PagePlugin implements Interceptor {
      */
     private Integer getCount(Invocation invocation, String sql, StatementHandler statementHandler) throws SQLException {
 
-        String fromSql = sql.substring(sql.indexOf("from"));
+        String fromSql = sql.substring(sql.indexOf(" from "));
         String countSql = "select count(*) as count " + fromSql;
         log.info("[page - info] 生成记录总条数sql：{}", countSql);
         // 获取数据库连接

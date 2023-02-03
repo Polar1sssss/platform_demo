@@ -1,4 +1,4 @@
-package com.hujtb.commons.web.enums;
+package com.hujtb.data.enums;
 
 
 public enum Codes {

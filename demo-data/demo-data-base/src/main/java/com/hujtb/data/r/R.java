@@ -1,5 +1,6 @@
-package com.hujtb.commons.web.r;
+package com.hujtb.data.r;
 
+import com.hujtb.data.base.BasePageReturn;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,7 +15,7 @@ import java.io.Serializable;
 @Accessors(chain = true)
 @AllArgsConstructor
 @NoArgsConstructor
-public class R<T> implements Serializable {
+public class R<T> extends BasePageReturn implements Serializable {
 
     /**
      * 响应码

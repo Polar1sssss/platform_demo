@@ -30,6 +30,15 @@ public class BaseConfiguration {
         public ApplicationUtils getApplicationUtils() {
             return new ApplicationUtils();
         }
+
+        /**
+         * 注册Web拦截器配置类
+         * @return
+         */
+        @Bean
+        public WebInterceptorConfig getWebInterceptorConfig() {
+            return new WebInterceptorConfig();
+        }
     }
 }
 

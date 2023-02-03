@@ -1,9 +1,9 @@
 package com.hujtb.commons.web.exception;
 
-import com.hujtb.commons.web.enums.Codes;
-import com.hujtb.commons.web.r.R;
-import com.hujtb.commons.web.r.RUtils;
+import com.hujtb.data.enums.Codes;
 import com.hujtb.commons.web.utils.RequestUtils;
+import com.hujtb.data.r.R;
+import com.hujtb.data.r.RUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.BindException;
 import org.springframework.web.bind.MethodArgumentNotValidException;

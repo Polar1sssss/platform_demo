@@ -1,6 +1,6 @@
-package com.hujtb.commons.web.r;
+package com.hujtb.data.r;
 
-import com.hujtb.commons.web.enums.Codes;
+import com.hujtb.data.enums.Codes;
 
 /**
  * 快捷生成R对象的方法

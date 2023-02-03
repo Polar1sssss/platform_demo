@@ -1,4 +1,4 @@
-package com.hujtb.commons.mysql.page;
+package com.hujtb.data.page;
 
 import lombok.Data;
 

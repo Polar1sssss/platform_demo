@@ -5,3 +5,7 @@ spring:
     name: demo-student
   profiles:
     active: 'dev'
+hujtb:
+  plugin:
+    page:
+      enable: true

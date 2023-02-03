@@ -1,18 +1,23 @@
 {
   "groups": [
     {
-      "name": "hujtb.plugin.sql",
-      "type": "com.hujtb.commons.mysql.property.SQLPluginConfigInfo",
-      "sourceType": "com.hujtb.commons.mysql.property.SQLPluginConfigInfo"
-    }
-  ],
-  "properties": [
+      "name": "hujtb.plugin",
+      "type": "com.hujtb.commons.mysql.property.PluginConfigInfo",
+      "sourceType": "com.hujtb.commons.mysql.property.PluginConfigInfo"
+    },
     {
-      "name": "hujtb.plugin.sql.enable",
-      "type": "java.lang.Boolean",
-      "sourceType": "com.hujtb.commons.mysql.property.SQLPluginConfigInfo",
-      "defaultValue": false
+      "name": "hujtb.plugin.page",
+      "type": "com.hujtb.commons.mysql.property.PluginConfigInfo$Page",
+      "sourceType": "com.hujtb.commons.mysql.property.PluginConfigInfo",
+      "sourceMethod": "getPage()"
+    },
+    {
+      "name": "hujtb.plugin.sql",
+      "type": "com.hujtb.commons.mysql.property.PluginConfigInfo$Sql",
+      "sourceType": "com.hujtb.commons.mysql.property.PluginConfigInfo",
+      "sourceMethod": "getSql()"
     }
   ],
+  "properties": [],
   "hints": []
 }
