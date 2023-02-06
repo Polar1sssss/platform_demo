@@ -30,8 +30,8 @@ public class ApiVersionRequestCondition implements RequestCondition<ApiVersionRe
     @Override
     public ApiVersionRequestCondition combine(ApiVersionRequestCondition method) {
 
-        // this代表controller的请求条件
-        // method代表controller中某个方法的请求条件
+        // this代表controller的请求条件对象
+        // method代表controller中某个方法的请求条件对象
         return method;
     }
 
@@ -46,13 +46,19 @@ public class ApiVersionRequestCondition implements RequestCondition<ApiVersionRe
 
         double apiVersionDouble = 1.0;
 
-        // 获取请求头中的版本信息，如果没有获取到，从参数中获取
+        // 获取请求头中的版本信息，如果没有获取到，从参数中获取。如果都没有获取到，则使用默认值
         String reqVersion = request.getHeader(VERSION_NAME);
         if (StringUtils.isEmpty(reqVersion)) {
             reqVersion = request.getParameter(VERSION_NAME);
         }
         if (!StringUtils.isEmpty(reqVersion)) {
-            apiVersionDouble = Double.parseDouble(reqVersion);
+
+            try {
+                apiVersionDouble = Math.max(Double.parseDouble(reqVersion), 1.0);
+            } catch (Exception e) {
+                apiVersionDouble = 1.0;
+            }
+
         }
 
         // 将从请求中获取到的版本号与RequestCondition对象中的版本号对比

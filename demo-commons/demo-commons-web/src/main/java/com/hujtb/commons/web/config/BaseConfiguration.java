@@ -33,6 +33,7 @@ public class BaseConfiguration {
 
         /**
          * 注册Web拦截器配置类
+         *
          * @return
          */
         @Bean
