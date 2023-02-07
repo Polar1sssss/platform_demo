@@ -8,6 +8,7 @@ import com.hujtb.data.entity.Student;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +22,8 @@ import java.util.List;
 @RequestMapping("/stu")
 @Slf4j
 @Validated
+// 配置中心配置文件修改后自动刷新
+@RefreshScope
 public class StuController {
 
     @Autowired

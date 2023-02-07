@@ -4,3 +4,4 @@ spring:
       - db-dev
       - log
       - jackson
+      - nacos

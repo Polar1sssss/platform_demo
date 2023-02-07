@@ -52,7 +52,6 @@ public class ApiVersionRequestCondition implements RequestCondition<ApiVersionRe
             reqVersion = request.getParameter(VERSION_NAME);
         }
         if (!StringUtils.isEmpty(reqVersion)) {
-
             try {
                 apiVersionDouble = Math.max(Double.parseDouble(reqVersion), 1.0);
             } catch (Exception e) {
@@ -78,7 +77,6 @@ public class ApiVersionRequestCondition implements RequestCondition<ApiVersionRe
      */
     @Override
     public int compareTo(ApiVersionRequestCondition other, HttpServletRequest httpServletRequest) {
-
         // 使用降序方式排序，例如同时存在1.0和2.0接口，请求为3.0，第一选择为2.0
         return Double.compare(other.getApiVersion(), this.getApiVersion());
     }

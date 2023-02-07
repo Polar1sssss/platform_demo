@@ -157,6 +157,8 @@
             <id>dev</id>
             <properties>
                 <runtime-profile>dev</runtime-profile>
+                <!-- 配置中心地址 -->
+                <config-address>localhost:8848</config-address>
             </properties>
         </profile>
         <!-- 生产环境占位符 -->
@@ -164,6 +166,7 @@
             <id>prod</id>
             <properties>
                 <runtime-profile>prod</runtime-profile>
+                <config-address>localhost:8848</config-address>
             </properties>
         </profile>
     </profiles>
