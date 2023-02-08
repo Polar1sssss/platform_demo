@@ -19,14 +19,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>com.hujtb</groupId>
-            <artifactId>demo-data-base</artifactId>
+            <artifactId>demo-data-entity-classes</artifactId>
         </dependency>
     </dependencies>
-
 </project>

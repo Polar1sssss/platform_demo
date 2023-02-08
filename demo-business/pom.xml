@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>demo-business-student</module>
+        <module>demo-business-classes</module>
     </modules>
 
     <properties>

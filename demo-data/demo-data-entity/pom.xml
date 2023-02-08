@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>demo-data-entity-student</module>
+        <module>demo-data-entity-classes</module>
     </modules>
     <modelVersion>4.0.0</modelVersion>
 
@@ -21,6 +22,16 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.hujtb</groupId>
+            <artifactId>demo-data-base</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-annotation</artifactId>

@@ -52,4 +52,11 @@ public class StuController {
         studentService.save(student);
         return RUtils.create("添加成功~");
     }
+
+    @RequestMapping("/getById")
+    public R getById(Long sId) {
+
+        Student student = studentService.getById(sId);
+        return RUtils.create(student);
+    }
 }

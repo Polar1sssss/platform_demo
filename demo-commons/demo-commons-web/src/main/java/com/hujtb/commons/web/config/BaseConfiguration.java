@@ -12,7 +12,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.SimpleFormatter;
 
 /**
  * Web模块的自动装配核心配置文件

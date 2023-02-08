@@ -99,10 +99,20 @@
                 <artifactId>demo-data-mapper-student</artifactId>
                 <version>${basic.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.hujtb</groupId>
+                <artifactId>demo-data-mapper-classes</artifactId>
+                <version>${basic.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>com.hujtb</groupId>
                 <artifactId>demo-data-mapper-student</artifactId>
+                <version>${basic.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hujtb</groupId>
+                <artifactId>demo-data-entity-classes</artifactId>
                 <version>${basic.version}</version>
             </dependency>
             <dependency>

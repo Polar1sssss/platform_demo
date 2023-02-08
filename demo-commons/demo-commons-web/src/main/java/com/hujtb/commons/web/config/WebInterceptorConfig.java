@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class WebInterceptorConfig implements WebMvcConfigurer {
 
-    @Autowired
+    @Autowired(required = false)
     private List<HandlerInterceptorAdapter> interceptorAdapters;
 
     /**
