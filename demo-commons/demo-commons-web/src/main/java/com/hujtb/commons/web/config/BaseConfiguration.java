@@ -4,6 +4,7 @@ import com.alibaba.cloud.nacos.NacosDiscoveryProperties;
 import com.hujtb.commons.web.exception.GlobalException;
 import com.hujtb.commons.web.utils.ApplicationUtils;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -78,6 +79,12 @@ public class BaseConfiguration {
             properties.setMetadata(metadata);
             return properties;
         }
+    }
+
+    @Configuration
+    @EnableFeignClients(basePackages = "com.hujtb.business.feign")
+    public static class FeignConfiguration {
+
     }
 }
 

@@ -34,5 +34,7 @@ public class Student {
     // 班级信息，在数据库中是没有这个字段的
     @TableField(exist = false)
     private Classes cls;
+    @TableField(exist = false)
+    private double score;
     private BaseEntity baseEntity;
 }

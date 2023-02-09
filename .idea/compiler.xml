@@ -8,13 +8,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo-data-mapper-student" />
+        <module name="demo-business-score-protocol" />
         <module name="demo-config" />
         <module name="demo-commons-web" />
         <module name="demo-business-classes-core" />
         <module name="demo-commons-mysql" />
         <module name="demo-data-entity-classes" />
+        <module name="demo-business-score-feign" />
         <module name="demo-business-classes-feign" />
         <module name="demo-business-student-feign" />
+        <module name="demo-business-score-core" />
         <module name="demo-commons-core" />
         <module name="demo-data-base" />
         <module name="demo-business-student-core" />

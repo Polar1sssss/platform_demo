@@ -9,6 +9,14 @@
     <file url="file://$PROJECT_DIR$/demo-business/demo-business-classes/demo-business-classes-protocol/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-business/demo-business-classes/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-business/demo-business-classes/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-business/demo-business-score/demo-business-score-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-business/demo-business-score/demo-business-score-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-business/demo-business-score/demo-business-score-feign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-business/demo-business-score/demo-business-score-feign/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-business/demo-business-score/demo-business-score-protocol/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-business/demo-business-score/demo-business-score-protocol/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-business/demo-business-score/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-business/demo-business-score/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-business/demo-business-student/demo-business-student-protocol/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-business/demo-business-student/demo-business-student-protocol/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-commons/demo-commons-mysql/src/main/java" charset="UTF-8" />

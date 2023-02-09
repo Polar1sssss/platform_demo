@@ -120,6 +120,16 @@
                 <artifactId>demo-data-base</artifactId>
                 <version>${basic.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.hujtb</groupId>
+                <artifactId>demo-business-classes-feign</artifactId>
+                <version>${basic.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hujtb</groupId>
+                <artifactId>demo-business-score-feign</artifactId>
+                <version>${basic.version}</version>
+            </dependency>
 
             <!-- 引入log4j2高版本依赖 -->
             <dependency>

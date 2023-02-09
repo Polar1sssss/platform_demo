@@ -28,13 +28,13 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <groupId>com.hujtb</groupId>
+            <artifactId>demo-business-classes-feign</artifactId>
         </dependency>
 
         <dependency>
             <groupId>com.hujtb</groupId>
-            <artifactId>demo-data-entity-classes</artifactId>
+            <artifactId>demo-business-score-feign</artifactId>
         </dependency>
     </dependencies>
 </project>

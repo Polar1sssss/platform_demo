@@ -1,0 +1,23 @@
+# feign超时配置，配置在服务调用方
+feign:
+  client:
+    config:
+      # 配置默认的相关属性
+      default:
+        # 连接超时
+        connect-timeout: 1000
+        # 读超时
+        read-timeout: 1000
+      # 班级服务的相关属性设置
+      demo-classes:
+        # 连接超时
+        connect-timeout: 1000
+        # 读超时
+        read-timeout: 1000
+  # 切换feign底层框架
+  okhttp:
+    enable: true
+  httpclient:
+    enable: false
+  hystrix:
+    enable: false

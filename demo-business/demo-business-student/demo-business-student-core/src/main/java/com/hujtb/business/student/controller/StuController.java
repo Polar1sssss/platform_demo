@@ -53,10 +53,17 @@ public class StuController {
         return RUtils.create("添加成功~");
     }
 
+    /**
+     * 根据id获取学生信息
+     *
+     * @param sId
+     * @return
+     */
     @RequestMapping("/getById")
     public R getById(Long sId) {
 
         Student student = studentService.getById(sId);
+        log.info("[stu - get] 获取学生信息：{}", student);
         return RUtils.create(student);
     }
 }
