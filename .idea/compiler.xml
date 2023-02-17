@@ -22,9 +22,9 @@
         <module name="demo-data-base" />
         <module name="demo-business-student-core" />
         <module name="demo-business-student-protocol" />
-        <module name="demo-ability" />
         <module name="demo-data-mapper-classes" />
         <module name="demo-data-entity-student" />
+        <module name="demo-ability-gateway" />
         <module name="demo-business-classes-protocol" />
       </profile>
     </annotationProcessing>

@@ -2,7 +2,10 @@ package com.hujtb.commons.web.config;
 
 import com.alibaba.cloud.nacos.NacosDiscoveryProperties;
 import com.hujtb.commons.web.exception.GlobalException;
+import com.hujtb.commons.web.interceptor.FeignParamInterceptor;
+import com.hujtb.commons.web.interceptor.FeignParamProperties;
 import com.hujtb.commons.web.utils.ApplicationUtils;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
@@ -81,8 +84,13 @@ public class BaseConfiguration {
         }
     }
 
+    /**
+     * Feign相关配置
+     *  @EnableFeignClients-defaultConfiguration表示所有feign请求都会经过这个拦截器
+     */
     @Configuration
-    @EnableFeignClients(basePackages = "com.hujtb.business.feign")
+    @EnableConfigurationProperties(FeignParamProperties.class)
+    @EnableFeignClients(basePackages = "com.hujtb.business.feign", defaultConfiguration = FeignParamInterceptor.class)
     public static class FeignConfiguration {
 
     }

@@ -2,6 +2,7 @@ package com.hujtb.business.student.controller;
 
 import com.hujtb.business.student.input.StudentInput;
 import com.hujtb.business.student.service.StudentService;
+import com.hujtb.commons.web.apiversion.ApiVersion;
 import com.hujtb.data.r.R;
 import com.hujtb.data.r.RUtils;
 import com.hujtb.data.entity.Student;
@@ -59,8 +60,18 @@ public class StuController {
      * @param sId
      * @return
      */
+    @ApiVersion(1.0)
     @RequestMapping("/getById")
-    public R getById(Long sId) {
+    public R getById1(Long sId) {
+
+        Student student = studentService.getById(sId);
+        log.info("[stu - get] 获取学生信息：{}", student);
+        return RUtils.create(student);
+    }
+
+    @ApiVersion(2.0)
+    @RequestMapping("/getById")
+    public R getById2(Long sId) {
 
         Student student = studentService.getById(sId);
         log.info("[stu - get] 获取学生信息：{}", student);
